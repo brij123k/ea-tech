@@ -8,7 +8,7 @@ const Header = ({ pages, currentPage, setCurrentPage, setShowSettings }) => {
   const downloadPagesAsPDF = async () => {
     try {
       const pageOrder = ['cover', 'terms', 'billing', 'thanks'];
-      const enabledPages = pageOrder
+      const enabledPages = pageOrderQ
         .map(id => pages[id])
         .filter(page => page && page.enabled);
 
